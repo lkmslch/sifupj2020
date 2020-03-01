@@ -1,1 +1,20 @@
+import javax.swing.JOptionPane;
 
+ // Compiler version JDK 11.0.2
+
+ public class Lab_2_PeriksKarakterString {
+   public static void main(String[] args){
+    String kalimat;
+    char cari;
+    int jumlah=0;
+    
+    kalimat = JOptionPane.showInputDialog(null, "Masukan kakimat anda: ");
+    cari = JOptionPane.showInputDialog(null, "Masukan karakter yang ingin anda hitung: ").charAt(0);
+    for (int i = 0; i < kalimat.length();i++){
+      if (cari == kalimat.charAt(i)){
+        jumlah++;
+      }
+     } 
+     JOptionPane.showMessageDialog(null, "Jumlah huruf " + cari + "=" + jumlah);
+   }
+ }
